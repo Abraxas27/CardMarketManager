@@ -1,0 +1,17 @@
+---
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: Linters
+    steps:
+     - name: pylint
+       run: |
+         echo test
